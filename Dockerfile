@@ -33,7 +33,7 @@ RUN set -x \
  && apk del --purge .build-deps
 
 # TODO: Replace 'john' and 'MyPassword' by any username/password you want.
-RUN printf 'pass123\pass123\n' | adduser viber
+RUN printf 'pass123\npass123\n' | adduser viber
 
 # Default configuration
 COPY sockd.conf /etc/
